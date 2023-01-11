@@ -223,3 +223,59 @@ input, select, textarea, button{
 .campo input:focus, .campo textarea:focus{
     background-color: #e2e2e2;
 }
+
+
+/* RESPONSIVIDADE */
+@media (max-width: 991px) {
+    #services img{
+        width: 30%;
+    }
+    #impermeabilização{
+        margin-top: 6%;
+    }
+
+}
+
+@media (max-width: 940px) {
+    #h1main{
+        font-size: 3rem;
+    }
+
+    h2{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    #h1main {
+            font-size: 2.5rem;
+    }
+    
+    h2 {
+            font-size: 2rem;
+    }
+}
+
+@media (max-width: 600px){
+    h2{
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 466px) {
+    #h1main{
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+    #about p{
+        padding-bottom: 6%;
+    }
+    #impermeabilização{
+        margin-top: 10%;
+    }
+}
