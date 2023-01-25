@@ -47,6 +47,25 @@
         gtag('event', 'conversion', { 'send_to': 'AW-10975658225/wK64CI6KsokYEPGBzfEo' });
     </script>
 
+    <!-- Event snippet for Contato - Botão Wpp (1) conversion page
+    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof (url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-10975658225/LPgnCPbTsokYEPGBzfEo',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
+
+
 
 </head>
 
@@ -79,7 +98,7 @@
 
             <div class="top-container">
                 <h1 id="h1main">Faça agora um orçamento de limpeza ou impermeabilização</h1>
-                <a class="btn" id="botaoPrincipal" href="https://contate.me/murillo.meirelles" target="_blank"><i class="fa-brands fa-whatsapp"></i> Entre em contato</a>
+                <a class="btn" id="botaoPrincipal" href="https://wa.me/5545999327335" target="_blank" onclick="return gtag_report_conversion('https://wa.me/5545999327335');"><i class="fa-brands fa-whatsapp"></i> Entre em contato</a>
             </div>
 
         </div>
@@ -173,7 +192,7 @@
                         consectetur nam quidem optio?
                     </p>
                 </div>
-                <a class="btn" href="https://contate.me/murillo.meirelles" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fazer orçamento</a>
+                <a class="btn" href="https://wa.me/5545999327335" target="_blank"><i class="fa-brands fa-whatsapp"></i> Fazer orçamento</a>
             </div>
         </div>
     </section>
